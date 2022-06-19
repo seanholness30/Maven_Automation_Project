@@ -11,7 +11,7 @@ public class Delta_AI_POM extends Reusable_Annotations_Class {
     //Test case 1: Rent a car
     @Test(priority = 1)
     public void RentACar() throws InterruptedException {
-        driver.navigate().to("https://www.Delta.com");
+        AI07_BaseClass.ai07_delta_homePage().navigateTo("https://www.Delta.com");
         Thread.sleep(1000);
         //Verify Title
         AI07_BaseClass.ai07_delta_rentACar().verifyTitle("Delta Air Lines | Flights & Plane Tickets + Hotels & Rental Cars");
@@ -242,8 +242,6 @@ public class Delta_AI_POM extends Reusable_Annotations_Class {
         Thread.sleep(2000);
 
     }//End of Test
-
-
 
 
     //Test Case 5: Travel Requirement Guide
